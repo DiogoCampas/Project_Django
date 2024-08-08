@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block header %}Welcome to the Team Performance Management System{% endblock %}
+
+{% block content %}
+<p>This is the home page of your application. Customize it as needed!</p>
+<button onclick="location.href='{% url 'feed' %}'">Go to Feed</button>
+
+{% endblock %}
+

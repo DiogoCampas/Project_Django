@@ -1,0 +1,12 @@
+{%extends 'base.html' %}
+
+{%block title %} Feed Page{% endblock %}
+
+{% block header %}Welcome to the User Feed{% endblock %}
+
+{% block content %}
+<p>This is the Feed page of the user. Do what you want!</p>
+<button onclick="location.href='{% url 'home' %}'">Home</button>
+<button onclick="location.href='{%url 'feed' %}' ">Feed</button>
+<button onclick="location.href='{%url 'squad' %}' ">Squad</button>
+{% endblock %}
